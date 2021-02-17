@@ -1,11 +1,11 @@
 # Project Title
 
-An implementation of an Employee REST service using nodejs and expressjs with 6 endpoints. 
+An implementation of an Employee REST service using nodejs and expressjs with a few endpoints to login employees, add new user, get users, get a specific user. updat employee details and lastly, delete employees. 
 
 ---
 ## Requirements and Dependencies
 
-For development, you will only need Node.js and a node global package, express, bcrypt, jswebtoken and mysql installed in your environement.
+For development, you will only need Node.js and a node global package, express, and a few dependencies installed in your environement to properly run this service.
 
 ### Web Server
 - #### Download a local web server
@@ -54,7 +54,11 @@ If the installation was successful, you should be able to run the following comm
     $ cd Node-Rest-Service
     
 To install all the dependencies in the `package.json` file, run.
+    
     $ npm install
 
 You can then run the service with the following command 
-  $ nodemon index.js
+    
+    $ nodemon index.js
+####    
+NOTE: The service is running in port `3000` but can be easily changed by changing the environment variable in a `.env` file in the root folder. Also, other private information can be set in this file e.g the `db_name`, `db_password` and `db_host`. Then add it to the `.gitignore` file. `node_module` should also be added to the `.gitignore` filel
