@@ -1,4 +1,4 @@
-# Project Title
+# An Employee Rest Service
 
 An implementation of an Employee REST service using nodejs and expressjs with a few endpoints to login employees, add new user, get users, get a specific user. updat employee details and lastly, delete employees. 
 
