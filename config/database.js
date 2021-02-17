@@ -1,3 +1,5 @@
+// Set up reusable DB connections
+
 const {createPool} = require("mysql");
 
 const pool = createPool({

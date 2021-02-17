@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { checkToken } = require("../../auth/token_validation");
+const { checkToken } = require("../../auth/validate_token");
 const {
   createUser,
   login,

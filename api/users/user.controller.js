@@ -10,8 +10,6 @@ const {
   const { sign } = require("jsonwebtoken");
   
   module.exports = {
-
-    // Create User
     createUser: (req, res) => {
       const body = req.body;
       const salt = genSaltSync(10);
@@ -30,8 +28,6 @@ const {
         });
       });
     },
-
-    // Login
     login: (req, res) => {
       const body = req.body;
       getUserByUserEmail(body.email, (err, results) => {
@@ -63,8 +59,6 @@ const {
         }
       });
     },
-
-    // GET REQUESTS
     getUserByUserId: (req, res) => {
       const id = req.params.id;
       getUserByUserId(id, (err, results) => {
@@ -97,8 +91,6 @@ const {
         });
       });
     },
-
-    //UPDATE REQUEST
     updateUsers: (req, res) => {
       const body = req.body;
       const salt = genSaltSync(10);
@@ -114,8 +106,6 @@ const {
         });
       });
     },
-
-    // DELETE REQUEST
     deleteUser: (req, res) => {
       const data = req.body;
       deleteUser(data, (err, results) => {
