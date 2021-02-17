@@ -1,6 +1,6 @@
 # An Employee Rest Service
 
-An implementation of an Employee REST service using nodejs and expressjs with a few endpoints to login employees, add new user, get users, get a specific user. updat employee details and lastly, delete employees. 
+An implementation of an Employee REST service using nodejs and expressjs with a few endpoints to login employees, add new employees, get all employees, get a specific employee. update employees details and lastly, delete employees. 
 
 ---
 ## Requirements and Dependencies
@@ -61,4 +61,4 @@ You can then run the service with the following command
     
     $ nodemon index.js
 ####    
-NOTE: The service is running in port `3000` but can be easily changed by changing the environment variable in a `.env` file in the root folder. Also, other private information can be set in this file e.g the `db_name`, `db_password` and `db_host`. Then add it to the `.gitignore` file. `node_module` should also be added to the `.gitignore` filel
+NOTE: The service is running in port `3000` but can be easily changed by changing the environment variable in a `.env` file in the root folder. Also, other private information can be set in this file e.g the `db_name`, `db_password` and `db_host`. Then add it to the `.gitignore` file. `node_module` should also be added to the `.gitignore` file
